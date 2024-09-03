@@ -61,7 +61,7 @@ def display_header():
 display_header()
 
 # Load GeoJSON data
-with open("Data/UP_Data_New.geojson") as f:
+with open("Streamlit_app/Data/UP_Dashboard_data.geojson") as f:
     geojson_data = json.load(f)
 
 # Extract district names for the dropdown menu and add "Uttar Pradesh" option
