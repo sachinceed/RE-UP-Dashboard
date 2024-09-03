@@ -286,7 +286,7 @@ geojson_data = load_geojson_data("Streamlit_app/Data/UP_Data_New.geojson")
 def load_state_data(file_path):
     return pd.read_csv(file_path)
 
-state_data = load_state_data("Streamlit_app/Data/UP_Dashboard_data.csv")
+state_data = load_state_data("Streamlit_app/Data/UP_Dashboard - UP_Dashboard_plotting_Data.csv")
 
 # Dictionary to map column names to more user-friendly technology names
 technology_aliases = {
