@@ -24,8 +24,8 @@ st.set_page_config(page_title='Renewable Energy Dashboard',layout="wide")
 
 
 # Local paths to your images
-logo1_path = "Logos/ceed logo2.png"
-logo3_path = "Logos/Neda.png"
+logo1_path = "Streamlit_app/Logos/ceed logo2.png"
+logo3_path = "Streamlit_app/Logos/Neda.png"
 # Open and resize the images
 img1 = Image.open(logo1_path).resize((250, 150))
 img3 = Image.open(logo3_path).resize((350, 180))
@@ -280,13 +280,13 @@ def load_geojson_data(file_path):
     with open(file_path) as f:
         return json.load(f)
 
-geojson_data = load_geojson_data("Data/UP_Data_New.geojson")
+geojson_data = load_geojson_data("Streamlit_app/Data/UP_Dashboard_data.geojson")
 
 # Function to load state data from a CSV file - cached for performance
 def load_state_data(file_path):
     return pd.read_csv(file_path)
 
-state_data = load_state_data("Data/UP_Dashboard - UP_Dashboard_plotting_Data.csv")
+state_data = load_state_data("Streamlit_app/Data/UP_Dashboard_data.csv")
 
 # Dictionary to map column names to more user-friendly technology names
 technology_aliases = {
