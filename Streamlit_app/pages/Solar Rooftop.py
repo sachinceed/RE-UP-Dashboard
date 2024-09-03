@@ -15,8 +15,8 @@ from PIL import Image
 st.set_page_config(page_title='Renewable Energy Dashboard', layout="wide")
 
 
-logo1_path = r"D:\UPNEDA_Dashboard\Logos\ceed logo2.png"
-logo3_path = r"D:\UPNEDA_Dashboard\Logos\Neda.png"
+logo1_path = r"Streamlit_app/Logos/ceed logo2.png"
+logo3_path = r"Streamlit_app/Logos/Neda.png"
 # Open and resize the images
 img1 = Image.open(logo1_path).resize((250, 150))
 img3 = Image.open(logo3_path).resize((350, 180))
@@ -57,13 +57,13 @@ def load_geojson_data(file_path):
     with open(file_path) as f:
         return json.load(f)
 
-geojson_data = load_geojson_data(r"D:\UPNEDA_Dashboard\Updated data latest\UP_Data_New.geojson")
+geojson_data = load_geojson_data(r"Streamlit_app/Data/UP_Data_New.geojson")
 
 # Function to load state data from a CSV file - cached for performance
 def load_state_data(file_path):
     return pd.read_csv(file_path)
 
-state_data = load_state_data(r"D:\UPNEDA_Dashboard\Updated data latest\UP_Dashboard - UP_Dashboard_plotting_Data.csv")
+state_data = load_state_data(r"Streamlit_app/Data/UP_Dashboard - UP_Dashboard_plotting_Data.csv")
 
 # Dictionary to map column names to more user-friendly technology names
 rooftop_technology_aliases = {
@@ -181,9 +181,9 @@ def valid_coordinates(lat, lon):
     return pd.notna(lat) and pd.notna(lon)
 
 # Load data and GeoJSON
-data_ongrid = load_data("D:/UPNEDA_Dashboard/geolocations for ongridand offgrid/Ongrid.csv")
-data_offgrid = load_data("D:/UPNEDA_Dashboard/geolocations for ongridand offgrid/Offgrid.csv")
-uttar_pradesh_geojson = load_geojson("D:/UPNEDA_Dashboard/UP_Data.geojson")
+data_ongrid = load_data("Streamlit_app/Data/Ongrid.csv")
+data_offgrid = load_data("Streamlit_app/Data/Ongrid.csv")
+uttar_pradesh_geojson = load_geojson("Streamlit_app/Data/UP_Data_New.geojson")
 
 # Create maps
 def create_map(data, geojson, map_center, zoom_start, tiles):
