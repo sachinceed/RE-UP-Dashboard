@@ -61,7 +61,7 @@ def display_header():
 display_header()
 
 # Load GeoJSON data
-with open("Streamlit_app/Data/UP_Dashboard_data.geojson") as f:
+with open("Streamlit_app/Data/UP_Data_New.geojson") as f:
     geojson_data = json.load(f)
 
 # Extract district names for the dropdown menu and add "Uttar Pradesh" option
@@ -280,7 +280,7 @@ def load_geojson_data(file_path):
     with open(file_path) as f:
         return json.load(f)
 
-geojson_data = load_geojson_data("Streamlit_app/Data/UP_Dashboard_data.geojson")
+geojson_data = load_geojson_data("Streamlit_app/Data/UP_Data_New.geojson")
 
 # Function to load state data from a CSV file - cached for performance
 def load_state_data(file_path):
