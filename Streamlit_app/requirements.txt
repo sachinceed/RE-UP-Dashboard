@@ -1,0 +1,9 @@
+streamlit
+pandas
+geopandas
+folium
+plotly
+folium
+streamlit_folium
+json5
+Pillow
