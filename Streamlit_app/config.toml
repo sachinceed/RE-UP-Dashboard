@@ -1,6 +1,0 @@
-[theme]
-base="dark"
-
-[global]
-layout = "wide"
-initial_sidebar_state = "expanded"
