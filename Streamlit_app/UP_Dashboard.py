@@ -91,7 +91,7 @@ def style_function(feature):
         }
 
 # Create a Folium map
-m = folium.Map(location=[26.5145, 80.55], zoom_start=7, min_zoom=5, max_zoom=15, tiles='cartodb dark_matter', control_scale=False)
+m = folium.Map(location=[26.5145, 80.55], zoom_start=7, min_zoom=5, max_zoom=15, tiles='cartodb positron', control_scale=False)
 
 # Add GeoJson data to the map
 folium.GeoJson(
@@ -247,7 +247,7 @@ pie_fig.update_traces(hoverinfo='label+value',
 # Update layout for a professional look
 pie_fig.update_layout(
     title_text='Share of Installed Solar Capacity',
-    title_font=dict(size=30, color='white'),
+    title_font=dict(size=30, color='black'),
     title_y=0.95,  # Adjust this value to increase/decrease the gap
     #legend_title_text='Category',
     legend=dict(
