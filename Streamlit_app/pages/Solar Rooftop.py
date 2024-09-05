@@ -196,7 +196,7 @@ def create_map(data, geojson, map_center, zoom_start, tiles):
                 location=[row['Latitude'], row['Longitude']],
                 tooltip=tooltip
             ).add_to(map_obj)
-    map_obj.options['scrollWheelZoom'] =  True
+    map_obj.options['scrollWheelZoom'] =  False
     return map_obj
 
 map_uttar_pradesh_ongrid = create_map(data_ongrid, uttar_pradesh_geojson, [27.0, 80.0], 7, 'cartodb positron')
