@@ -24,8 +24,8 @@ st.set_page_config(page_title='Renewable Energy Dashboard',layout="wide")
 
 
 # Local paths to your images
-logo1_path = "Streamlit_app/Logos/ceed logo.jpg"
-logo3_path = "Streamlit_app/Logos/Neda.png"
+logo1_path = r"Streamlit_app/Logos/ceed logo.jpg"
+logo3_path = r"Streamlit_app/Logos/Neda.png"
 # Open and resize the images
 img1 = Image.open(logo1_path).resize((250, 150))
 img3 = Image.open(logo3_path).resize((350, 180))
