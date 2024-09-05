@@ -130,7 +130,7 @@ st.markdown(
 
 left_co, cent_co,last_co = st.columns([1,10,6])
 with cent_co:
-    folium_static(m, width=1300, height=800)
+    folium_static(m, width=1200, height=900)
 
 
 
