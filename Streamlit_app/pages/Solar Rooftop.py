@@ -199,8 +199,8 @@ def create_map(data, geojson, map_center, zoom_start, tiles):
     map_obj.options['scrollWheelZoom'] =  False
     return map_obj
 
-map_uttar_pradesh_ongrid = create_map(data_ongrid, uttar_pradesh_geojson, [27.0, 80.0], 7, 'cartodb dark_matter')
-map_uttar_pradesh_offgrid = create_map(data_offgrid, uttar_pradesh_geojson, [27.0, 80.0], 7, 'cartodb dark_matter')
+map_uttar_pradesh_ongrid = create_map(data_ongrid, uttar_pradesh_geojson, [27.0, 80.0], 7, 'cartodb positron')
+map_uttar_pradesh_offgrid = create_map(data_offgrid, uttar_pradesh_geojson, [27.0, 80.0], 7, 'cartodb positron')
 
 
 st.header("Solar Rooftop (Ongrid)")
